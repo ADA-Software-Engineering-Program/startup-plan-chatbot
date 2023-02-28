@@ -1,0 +1,40 @@
+{"dataset": [
+        {"tag": "greeting",
+         "patterns": ["Hi","Hi there", "How are you", "Is anyone there?","Hey","Hola","holla", "Hello", "Good day"],
+         "responses": ["Hello, I am doing very well. thanks for asking", "Hi", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting you, bye", "Till next time"],
+         "responses": ["See you!", "bye, Have a nice day", "Bye! Come back again soon.", "Bye"],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+	{"tag": "expression",
+         "patterns": ["wow", "cool", "hmmm", "okay"],
+         "responses":["yeah", "lol"],
+         "context": [""]
+        },
+	{"tag": "Intro",
+         "patterns": ["What do you do?", "What is your product?", "what is startup plan"],
+         "responses":["We provide customizable business plan and customer survey templates for startups while also granting them legal services and business registration guides"],
+         "context": [""]
+	},
+	{"tag": "Services",
+         "patterns": ["How do I use your product?", "What type of templates do you have?", "How do I start my business?", "Templates", "Legal services", "I need legal sevices", "Business registration"],
+         "responses":[" To get more insights to our sevices, visit our website @ <a href='https://ada-software-engineering-program.github.io/startup-plan/'>Startup plan</a>"],
+         "context": [""]
+        },
+	{"tag": "Pricing",
+         "patterns": ["Prices", "Payments", "How do I make payment?", "pricing", "Premium plan"],
+         "responses":["To know more about our product and services please visit our website @ <a href='https://ada-software-engineering-program.github.io/startup-plan/'>Startup plan</a> and navigate to our services"],
+         "context": [""]
+        }
+   ]
+}
+
+         
