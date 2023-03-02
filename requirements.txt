@@ -3,3 +3,4 @@ dash == 2.6.0
 gunicorn
 numpy
 nltk
+markupsafe==2.0.1

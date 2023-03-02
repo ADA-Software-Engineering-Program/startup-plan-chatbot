@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, jsonify
-
+from markupsafe import soft_unicode
 
 from user_chat import get_response
 app = Flask(__name__)
