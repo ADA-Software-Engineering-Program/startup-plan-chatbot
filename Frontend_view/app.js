@@ -25,19 +25,19 @@ class Chatbox {
         })
     }
 
-    toggleState(chatbox) {
+    toggleState(chatBox) {
         this.state = !this.state;
 
     
         if(this.state) {
-            chatbox.classList.add('chatbox--active')
+            chatBox.classList.add('chatbox--active')
         } else {
-            chatbox.classList.remove('chatbox--active')
+            chatBox.classList.remove('chatbox--active')
         }
     }
 
-    onSendButton(chatbox) {
-        var textField = chatbox.querySelector('input');
+    onSendButton(chatBox) {
+        var textField = chatBox.querySelector('input');
         let text1 = textField.value
         if (text1 === "") {
             return;
@@ -58,17 +58,17 @@ class Chatbox {
           .then(r => {
             let msg2 = { name: "Launch bot", message: r.answer };
             this.messages.push(msg2);
-            this.updateChatText(chatbox)
+            this.updateChatText(chatBox)
             textField.value = ''
 
         }).catch((error) => {
             console.error('Error:', error);
-            this.updateChatText(chatbox)
+            this.updateChatText(chatBox)
             textField.value = ''
           });
     }
 
-    updateChatText(chatbox) {
+    updateChatText(chatBox) {
         var html = '';
         this.messages.slice().reverse().forEach(function(item, index) {
             if (item.name === "Launch bot")
@@ -81,11 +81,11 @@ class Chatbox {
             }
           });
 
-        const chatmessage = chatbox.querySelector('.chatbox__messages');
+        const chatmessage = chatBox.querySelector('.chatbox__messages');
         chatmessage.innerHTML = html;
     }
 }
 
 
-const chatbox = new Chatbox();
-chatbox.display();
+const chatBox = new Chatbox();
+chatBox.display();
