@@ -5,5 +5,4 @@ numpy
 nltk
 markupsafe==2.0.1
 torch
-json
-model
+
