@@ -5,6 +5,5 @@ numpy
 nltk
 markupsafe==2.0.1
 torch
-tkinter
 json
 model
