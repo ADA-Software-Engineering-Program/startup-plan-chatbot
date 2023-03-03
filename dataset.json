@@ -26,7 +26,7 @@
 	},
 	{"tag": "Services",
          "patterns": ["How do I use your product?", "What type of templates do you have?", "How do I start my business?", "Templates", "Legal services", "I need legal sevices", "Business registration"],
-         "responses":[" To get more insights to our sevices, visit our website @ <a href='https://ada-software-engineering-program.github.io/startup-plan/'>Startup plan</a>"],
+         "responses":[" To get insights, please check out our sevices. visit our website @ <a href='https://ada-software-engineering-program.github.io/startup-plan/'>Startup plan</a>"],
          "context": [""]
         },
 	{"tag": "Pricing",

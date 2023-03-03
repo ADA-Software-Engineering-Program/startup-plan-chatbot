@@ -1,15 +1,14 @@
 from flask import Flask, render_template, request, jsonify
-from markupsafe import soft_unicode
 
 from user_chat import get_response
 app = Flask(__name__)
 
-@app.route("/", methods = ["GET"])
+@app.route("/", methods=["get"])
 def index_get():
     return render_template("base.html")
 
-@app.route("/predict", methods = ["POST"])
-def predict():
+@app.route("/predict", methods=["post"])
+def preict():
     text = request.get_json().get("message")
     
     response =get_response(text)
@@ -18,5 +17,4 @@ def predict():
 
 if __name__== "__main__":
     app.run(debug= True)
-    
     
