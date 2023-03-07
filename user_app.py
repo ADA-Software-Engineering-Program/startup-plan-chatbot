@@ -3,9 +3,10 @@ from flask import Flask, render_template, request, jsonify
 from user_chat import get_response
 
 app = Flask(__name__)
-@app.get("/")
+
+@app.route("/", methods=["get"])
 def index_get():
-    return render_template("index.html")
+    return render_template("base.html")
 
 @app.route("/predict", methods=["post"])
 def preict():
