@@ -49,7 +49,6 @@ class Chatbox {
         fetch('/predict', {
             method: 'POST',
             body: JSON.stringify({ message: text1 }),
-            mode: 'cors',
             headers: {
               'Content-Type': 'application/json'
             },
