@@ -5,3 +5,4 @@ numpy
 nltk
 markupsafe==2.0.1
 torch == 1.13.1
+flask_cors == 2.0.1
