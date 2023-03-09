@@ -46,8 +46,9 @@ class Chatbox {
         let msg1 = { name: "User", message: text1 }
         this.messages.push(msg1);
 
-        fetch('https://startup-plan.onrender.com/predict', {
+        fetch('/predict', {
             method: 'POST',
+            mode: "cors", 
             body: JSON.stringify({ message: text1 }),
             headers: {
               'Content-Type': 'application/json'
