@@ -21,7 +21,7 @@
         },
 	{"tag": "Intro",
          "patterns": ["What do you do?","what is startup plan", "what are your services"],
-         "responses":["Hi, welcome to startup Plan. We provide you with business templates, customer survey and lots more that helps you start up your business. visit https://ada-software-engineering-program.github.io/startup-plan/'>@our home page</a>  to get started."],
+         "responses":["Hi, welcome to startup Plan. We provide you with business templates, customer survey and lots more that helps you start up your business. visit <a href= 'https://ada-software-engineering-program.github.io/startup-plan/'>@our home page</a>  to get started."],
          "context": [""]
 	},
 	{"tag": "Product and Services",
@@ -40,7 +40,7 @@
          "context":[""]
         }, 
         {"tag": "login/signup",
-         "patterns": ["signing up", "sign up","Getting started","Log in", "Login","Get started"],
+         "patterns": ["signing up", "sign up","Getting started","Get started"],
          "responses": ["Please visit our <a href='https://ada-software-engineering-program.github.io/startup-plan/'>@Sign up page</a> to get started."],
          "context": [""]
         }
