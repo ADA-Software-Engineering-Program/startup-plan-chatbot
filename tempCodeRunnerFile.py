@@ -12,7 +12,7 @@ def index_get():
     return render_template("base.html")
 
 @app.route("/predict", methods=["post"])
-def preict():
+def predict():
     text = request.get_json().get("message")
     
     response =get_response(text)
