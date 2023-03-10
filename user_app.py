@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, jsonify
 from flask_cors import CORS
 
 from user_chat import get_response
+Flask.logger_name = 'listlogger'
 
 app = Flask(__name__)
 CORS(app)
