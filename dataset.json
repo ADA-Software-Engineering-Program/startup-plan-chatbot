@@ -1,7 +1,7 @@
 {"dataset": [
         {"tag": "greeting",
-         "patterns": ["Hi","Hi there", "How are you", "Is anyone there?","Hey","Hola","holla", "Hello", "Good day"],
-         "responses": ["Hello, I am doing very well. thanks for asking", "Hi", "Hi there, how can I help?"],
+         "patterns": ["Hi","Hi there", "Is anyone there?","Hey","Hola","holla", "Hello", "Good day"],
+         "responses": ["Hello, I am available to answer questions regarding our product and services", "Hi there, how can I help?"],
          "context": [""]
         },
         {"tag": "goodbye",
@@ -20,18 +20,28 @@
          "context": [""]
         },
 	{"tag": "Intro",
-         "patterns": ["What do you do?", "What is your product?", "what is startup plan"],
-         "responses":["We provide customizable business plan and customer survey templates for startups while also granting them legal services and business registration guides"],
+         "patterns": ["What do you do?","what is startup plan", "what are your services"],
+         "responses":["Hi, welcome to startup Plan. We provide you with business templates, customer survey and lots more that helps you start up your business. visit https://ada-software-engineering-program.github.io/startup-plan/'>@our home page</a>  to get started."],
          "context": [""]
 	},
-	{"tag": "Services",
-         "patterns": ["How do I use your product?", "What type of templates do you have?", "How do I start my business?", "Templates", "Legal services", "I need legal sevices", "Business registration"],
-         "responses":[" To get insights, please check out our sevices. visit our website @ <a href='https://ada-software-engineering-program.github.io/startup-plan/'>Startup plan</a>"],
+	{"tag": "Product and Services",
+         "patterns": ["How do I use your product?","I want a lawyer","Business registration", "How do I register my business", "What type of templates do you have?", "How do I get business templates?","What customer survey templates do you have?",   "Business templates", "customer survey","How do I start my business?", "Templates", "Legal services", "I need legal sevices", "Business registration"],
+         "responses":[" To get insights as regards to how we can help you, please check out our sevices. visit our website <a href='https://ada-software-engineering-program.github.io/startup-plan/'>@Startup plan</a> and navigate to our services page"],
          "context": [""]
         },
 	{"tag": "Pricing",
-         "patterns": ["Prices", "Payments", "How do I make payment?", "pricing", "Premium plan"],
-         "responses":["To know more about our product and services please visit our website @ <a href='https://ada-software-engineering-program.github.io/startup-plan/'>Startup plan</a> and navigate to our services"],
+         "patterns": ["Prices", "Payments", "Pricing", "Pricings", "Payments","Monthly subscription","Subscriptions","How do I make payment?", "pricing", "Premium plan"],
+         "responses":["To know more about our product and services please visit our services <a href='https://ada-software-engineering-program.github.io/startup-plan/'>@Startup plan services</a> and navigate to our services"],
+         "context": [""]
+        },
+        {"tag": "help",
+         "patterns": ["I need help","Starting up my business","Business plan", "Business guide"],
+         "responses": ["Please visit our home page <a href='https://ada-software-engineering-program.github.io/startup-plan/'>@Startup plan</a> to access business templates"],
+         "context":[""]
+        }, 
+        {"tag": "login/signup",
+         "patterns": ["signing up", "sign up","Getting started","Log in", "Login","Get started"],
+         "responses": ["Please visit our <a href='https://ada-software-engineering-program.github.io/startup-plan/'>@Sign up page</a> to get started."],
          "context": [""]
         }
    ]
